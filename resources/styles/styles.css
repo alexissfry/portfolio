@@ -4,17 +4,18 @@
   --text-light: #cccccc;
   --accent: #e88679;
   --font-bold: 600;
-  --font-medium: 450;
+  --font-medium: 400;
   --font-regular: 300;
 }
 
-/* body {
+body {
+  padding-top: 1rem;
+}
+
+html {
   font-family: "Inter", sans-serif;
   color: var(--text-dark);
   font-size: 18px;
-} */
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -33,7 +34,7 @@ a {
 
 #headline {
   font-family: "Inter", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: var(--font-bold);
   padding-bottom: 0.2em;
   line-height: 1.2em;
@@ -54,10 +55,15 @@ a {
   font-size: 24px;
 }
 
+.transparent-navbar {
+  background-color: transparent !important;
+}
+
 .navbar-nav .nav-item .nav-link {
-  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
   color: var(--text-dark);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-medium);
   margin-left: 0.5em;
 }
 
@@ -147,4 +153,80 @@ a {
 .proj-card:hover {
   box-shadow: 0 2px 40px 0 var(--text-light);
   transform: translateY(-0.8em);
+}
+
+@media only screen and (max-width: 992px) {
+  /* .navbar-light .navbar-toggler {
+        border: 0;
+    } */
+  .nav-item {
+    padding-left: 0px;
+  }
+  /* .sidebar {
+        display: none;
+    } */
+  /* #art-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+  #memoji {
+    width: 400px;
+  }
+  #headline {
+    font-size: 2.5rem;
+  }
+  .about-body {
+    font-size: 2.2rem;
+  }
+  /* .iframe-container {
+        padding-top: 230%
+    } */
+  /* .header-text {
+        width: auto;
+    } */
+}
+
+@media only screen and (max-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+  }
+
+  #about-body {
+    font-size: 16px;
+  }
+
+  .flex-column-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-column-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  #gallery {
+    padding: 2em;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* #art-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+  #memoji {
+    width: 375px;
+  }
+}
+
+@media (max-width: 576px) {
+  #memoji {
+    width: 300px;
 }
