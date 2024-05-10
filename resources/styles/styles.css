@@ -66,16 +66,16 @@ a {
 
 /* Skill Labels */
 .proj-label {
-    background-color: rgba(244, 86, 69, 0.051) !important;
-    color: var(--accent) !important;
-    border: 1px solid var(--accent) !important;
-    padding: .5em .8em;
-    font-weight: var(--font-medium) !important;
-    margin-bottom: .5em;
+  background-color: rgba(244, 86, 69, 0.051) !important;
+  color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+  padding: 0.5em 0.8em;
+  font-weight: var(--font-medium) !important;
+  margin-bottom: 0.5em;
 }
 
 .space-bottom-sm {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #memoji {
@@ -240,4 +240,5 @@ a {
 @media (max-width: 576px) {
   #memoji {
     width: 300px;
+  }
 }

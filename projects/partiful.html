@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterative Design</title>
+    <!-- import bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- import Inter font -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- import style sheet -->
+    <link rel="stylesheet" href="../resources/styles/pastiche.css" />
+    <!-- import font awesome -->
+    <script
+      src="https://kit.fontawesome.com/82113c773a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light transparent-navbar px-5">
+      <a class="navbar-brand mb-0" id="nav-text" href="../index.html">Alexis Fry</a>
+    </nav>
+    <main>
+      <div class="landing-container space">
+        <div class="space-bottom">
+          <h1>Partiful Event Page</h1>
+          <h2>An iterative design for Partiful's event customization</h2>
+        </div>
+        <div class="row d-flex align-content-center space-top body-text">
+          <div class="col-md-2">
+            <div class="text-mini">Role</div>
+            <p>UX Designer</p>
+          </div>
+          <div class="col-md-2">
+            <div class="text-mini">Timeline</div>
+            <p>March 2024</p>
+          </div>
+          <div class="col-md-3">
+            <div class="text-mini">Team</div>
+            <p>Claire Yang, Vivian Li, Tiger Ji</p>
+          </div>
+          <div class="col-md-4">
+            <div class="text-mini">Skills</div>
+            <span class="badge proj-label">Product Design</span>
+            <span class="badge proj-label">UI/UX</span>
+            <span class="badge proj-label">Figma</span>
+          </div>
+        </div>
+      </div>
+      <div class="context-container">
+        <img
+          class="img-fluid"
+          src="../resources/images/partiful/partiful-demo.gif"
+          alt="Pastiche's current site"
+        />
+        <p>
+          Pastiche's current homepage, view the entire site
+          <a href="https://pastichefinedesserts.com/" target="_blank">here</a>!
+        </p>
+        <div class="row space-md">
+          <div class="col-lg-9 mx-auto">
+            <div class="row">
+              <div class="col-md-3 mr-3">
+                <h2 id="spec-bold">Problem</h2>
+              </div>
+              <div class="col body-text">
+                <a href="https://partiful.com/" target="_blank">Partiful</a> is
+                a venture-backed, social event planning platform that targets
+                Gen Z and Millennial users. Compared to competitors like
+                Eventbrite and Facebook, Partiful is highly customizable with
+                trendy graphics and themes, enabling users to truly capture the
+                vibe of their event and delight their guests. To scale after
+                their series-A, the startup is hoping to increase user traction
+                and engagement, and we are aiming to deliver customization
+                features that do just that.
+              </div>
+            </div>
+            <div class="row space-md">
+              <div class="col-md-3 mr-3">
+                <h2 id="spec-bold">Objective</h2>
+              </div>
+              <div class="col body-text">
+                How do we make the event customization page even more “Partiful”
+                — to create unexpected delight, irreverence, and
+                <strong>FUN</strong> for users? 💃🕺
+              </div>
+            </div>
+            <div class="row space-bottom">
+              <div class="col-md-3 mr-3">
+                <h2 id="spec-bold">Scope</h2>
+              </div>
+              <div class="col body-text">
+                Since Partiful has an established platform and design system,
+                our aim was not a complete redesign. Instead, our goal was to
+                introduce new features on top of the existing interface and
+                functionality that would enhance the user experience of event
+                page customization. Further, I mainly took ownership over the
+                title font customization and “Partiful your Guests” cover image
+                features.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="research-container">
+        <div class="row justify-content-start">
+          <div class="col-lg-8 mx-auto">
+            <h1>Research</h1>
+            <p class="body-text">
+              As we are all users of Partiful’s product, we excitedly explored
+              the existing event customization page, putting ourselves in the
+              shoes of a Partiful employee to prioritize feasibility and a user
+              to enable out-of-the-box thinking. We kicked off the ideation
+              process by having a conversation about any thoughts each of us had
+              to further customization. This multi-hour meeting led to a laundry
+              list of ideas.
+            </p>
+            <ul class="body-text">
+              <li>Incorporating music into the invite pages sent to guests</li>
+              <li>Title font customization</li>
+              <li>
+                Animated or interactive cover images (e.g. by including guest
+                faces in the image like Elf Yourself)
+              </li>
+              <li>
+                Custom page theme generators, either through AI or a
+                color/gradient selector
+              </li>
+              <li>Custom emojis/messages for RSVP-ing to events</li>
+              <li>
+                Custom layout options for invite pages, possibly creatable via a
+                drag-and-drop interface
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="design-container">
+        <div class="row justify-content-start space">
+          <div class="col-lg-8 mx-auto">
+            <h1>Process</h1>
+            <h2>Sketching</h2>
+            <p class="body-text">
+              We began to bring our ideas to life through roughly sketching
+              features that would require meaningful adjustments to the existing
+              interface: title font customization, animated or interactive cover
+              images, music integration, and theme generation. Each member did
+              their own sketches, which allowed us to explore different avenues
+              of implementation.
+            </p>
+            <div class="context-container">
+              <img
+                class="img-fluid space-bottom"
+                id="sketches"
+                src="../resources/images/pastiche/sketches.png"
+                alt="Early stage sketches"
+              />
+            </div>
+            <p class="body-text space-bottom">
+              When evaluating sketches, we decided to narrow the scope and
+              ultimately forward went with title font customization, music
+              integration, and theme generation through AI and color selection.
+              We decided to cut animated or interactive cover images since these
+              images are already customizable and, therefore, assumed this idea
+              would be less of a priority from a business perspective.
+            </p>
+            <h2 class="space-bottom">Low-fidelity Wireframes</h2>
+            <p class="body-text">
+              Wireframing allowed us to put these feature implementations and
+              test their cohesion on the interface, which was especially
+              important given the emphasis Partiful puts on WYSIWYG in their
+              design philosophy.
+            </p>
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="800"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMLnCI2LS5FmgL1VJp4JFhV%2FPartiful-Event-Page%3Ftype%3Ddesign%26node-id%3D1758%253A4873%26mode%3Ddesign%26t%3DgfSyzgu4ltsSCuRO-1"
+              allowfullscreen
+            ></iframe>
+            <p class="body-text">
+              We then presented our wireframed ideas to our clients and peers in
+              a
+              <a
+                href="https://www.loom.com/share/3733333b089d42fabab24885ef4301bc?sid=7ec7ca18-9a10-4d77-a82e-d25b1c26faae"
+                target="_blank"
+              ></a
+              >Loom. We were lucky to receive the following feedback :)
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <p><strong>🎉 From Partiful:</strong></p>
+                <ul class="body-text space-top">
+                  <li>
+                    Opposition to the complexity of the AI generation and vast
+                    range of options for custom color/gradient themes, citing
+                    concerns of low contrast and clutteredness
+                  </li>
+                  <li>
+                    Preference for us to incorporate the color customization
+                    into their existing themes
+                  </li>
+                  <li>
+                    A suggestion to pivot in our creative direction, preferring
+                    the “Partifuliness” of the cover image showcasing guest/host
+                    faces in an Elf Yourself-esque way
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <p><strong>👩🏽‍🎓 From our Peers:</strong></p>
+                <ul class="body-text space-top">
+                  <li>
+                    General positivity and excitement towards music integration
+                  </li>
+                  <li>
+                    Concern about whether adding a pulsing cover image animation
+                    along with the music would be too distracting
+                  </li>
+                  <li>
+                    Potentially shortening the flow for picking a song, since
+                    the current modal to do so is multi-page
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="body-text space-bottom">
+              After taking this feedback into account, we revised our
+              low-fidelity wireframes before moving forwards, which can be
+              accessed
+              <a
+                href="https://www.figma.com/file/MLnCI2LS5FmgL1VJp4JFhV/Partiful-Event-Page?type=design&node-id=1758%3A3186&mode=design&t=E0epbx0gxaK3qshP-1"
+                target="_blank"
+                >here</a
+              >. Next, we redefined Partiful's design system with our components
+              added and started on final high-fidelity mockups.
+            </p>
+            <h2>Style Guide</h2>
+            <div class="image-container">
+              <img
+                class="img-fluid space-bottom"
+                id="style-guide"
+                src="../resources/images/partiful/style-guide.png"
+                alt="Partiful's style guide"
+              />
+            </div>
+            <h2 class="space-bottom">High-fidelity Prototype</h2>
+            <div class="row">
+              <div class="col-md-5">
+                <p class="body-text">Flow 1</p>
+                <h4 id="hifi-elem">Theme Customization</h4>
+              </div>
+              <div class="col-md-7">
+                <p class="body-text p-0">
+                  After taking feedback and scrapping our original AI and
+                  gradient ideas, we instead implemented a similar interface
+                  with a simple slider to adjust the hue for each individual
+                  theme.
+                </p>
+              </div>
+            </div>
+            <img
+              class="img-fluid space-bottom-lg"
+              src="../resources/images/pastiche/contrast.gif"
+              alt="High-fidelity mockup showing contrast"
+            />
+            <div class="row">
+              <div class="col-md-5">
+                <p class="body-text">Flow 2</p>
+                <h4 id="hifi-elem">Font Customization</h4>
+              </div>
+              <div class="col-md-7">
+                <p class="body-text p-0">
+                  We decided to go with presets of fonts and prevent custom
+                  uploads due to differences in line height and readability.
+                </p>
+              </div>
+            </div>
+            <img
+              class="img-fluid space-bottom-lg"
+              src="../resources/images/pastiche/contrast.gif"
+              alt="High-fidelity mockup showing contrast"
+            />
+            <div class="row">
+              <div class="col-md-5">
+                <p class="body-text">Flow 3</p>
+                <h4 id="hifi-elem">Music Integration</h4>
+              </div>
+              <div class="col-md-7">
+                <p class="body-text p-0"></p>
+              </div>
+            </div>
+            <img
+              class="img-fluid space-bottom-lg"
+              src="../resources/images/pastiche/contrast.gif"
+              alt="High-fidelity mockup showing contrast"
+            />
+            <div class="row">
+              <div class="col-md-5">
+                <p class="body-text">Flow 4</p>
+                <h4 id="hifi-elem">Back Cover Customization</h4>
+              </div>
+              <div class="col-md-7">
+                <p class="body-text p-0">
+                  We took the nudge from our clients to add interactive cover
+                  images (particularly, those with face cutouts) as it seemed
+                  particularly “Partiful” in inducing unexpected delight.
+                </p>
+              </div>
+            </div>
+            <img
+              class="img-fluid space-bottom-lg"
+              src="../resources/images/pastiche/contrast.gif"
+              alt="High-fidelity mockup showing contrast"
+            />
+            <p class="body-text">
+              We presented our final design in a Loom for our friends at
+              Partiful:
+            </p>
+            <div
+              style="
+                position: relative;
+                padding-bottom: 57.324840764331206%;
+                height: 0;
+              "
+            >
+              <iframe
+                src="https://www.loom.com/embed/e6f07fea94fb4271812210cbd65b61d5?sid=56cf0f1e-4327-4f40-99bd-34bd66e42961"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="final-container">
+        <div class="row justify-content-start space">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="space-bottom">Final Design</h1>
+            <div class="context-container space-bottom">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMLnCI2LS5FmgL1VJp4JFhV%2FPartiful-Event-Page%3Ftype%3Ddesign%26node-id%3D1%253A2%26mode%3Ddesign%26t%3DE0epbx0gxaK3qshP-1"
+                allowfullscreen
+              ></iframe>
+              <p>
+                Either click above or
+                <a
+                  href="https://www.figma.com/file/MLnCI2LS5FmgL1VJp4JFhV/Partiful-Event-Page?type=design&node-id=364%3A818&mode=design&t=E0epbx0gxaK3qshP-1/"
+                  target="_blank"
+                  >here</a
+                >
+                to access the complete Figma prototypes!
+              </p>
+            </div>
+            <h1 class="space-bottom">Takeaways</h1>
+            <h4>➡️ Remember to weigh technical feasibility</h4>
+            <p class="body-text">
+              Lots of the feedback we got during our final demo to the Partiful
+              team was questioning technical feasibility and also usability. In
+              particular, we did not fully think through how the hue overlay
+              would be built. Wearing different hats as a designer, especially
+              before creating high-fidelity mockups, is incredibly important,
+              because if an idea is not technically feasible it will not enter
+              development.
+            </p>
+            <h4>➡️ Feedback is a gift</h4>
+            <p class="body-text">
+              The most valuable part of the iterative design process was
+              receiving really specific, thoughtful feedback from our points of
+              contact. We saw how important good feedback is as it illuminated
+              crucial blind spots for us to consider that enabled us to refine
+              and ultimately design a better interface. Although we know that
+              Partiful is more focused on building out the robustness of user
+              networking on the platform right now, we hope that some of our
+              ideas are implemented at some point. Regardless, I want to give
+              Partiful a huge shoutout for giving us this wonderful opportunity
+              to work with them on this project!
+            </p>
+            <!-- <img
+              class="small-img img-fluid space-bottom"
+              src="../resources/images/partiful/us-spice.webp"
+              alt="Partiful team with us and Ice Spice"
+            /> -->
+        </div>
+      </div>
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-sm-8 mx-auto">
+            <p class="text-center mb-1">
+              &copy; 2024 created with ❤️ by Alexis Fry
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
