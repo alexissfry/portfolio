@@ -36,33 +36,30 @@
     ></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light transparent-navbar px-5">
+      <a class="navbar-brand mb-0" id="nav-text" href="index.html"
+        >Alexis Fry</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#projects">Work</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <main>
-      <nav class="navbar navbar-expand-lg navbar-light transparent-navbar px-5">
-        <a class="navbar-brand mb-0" id="nav-text" href="index.html"
-          >Alexis Fry</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#projects">Work</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="fun.html">Fun</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <section class="about">
         <div class="flex-column-1">
           <img
@@ -76,10 +73,10 @@
           <div class="col-md-12 space-bottom header-text">
             <h1 id="headline">Hello 👋! I'm Alexis.</h1>
             <p id="about-body">
-              I'm a junior at Brown University studying Computer Science with a focus
-              in AI/ML and minoring in Entrepreneurship. I am an impact-driven
-              full stack engineer who loves to develop technology that centers
-              user experience.
+              I'm a junior at Brown University studying Computer Science with a
+              focus in AI/ML and minoring in Entrepreneurship. I am an
+              impact-driven full stack engineer who loves to develop technology
+              that centers user experience.
             </p>
             <p id="about-body">
               I've built software at
@@ -120,20 +117,20 @@
               <div class="w-100">
                 <img
                   class="card-img"
-                  src="resources/images/partiful.gif"
+                  src="resources/images/partiful.png"
                   alt="Card image"
                 />
               </div>
               <div class="card-body">
-                <!-- <div class="space-bottom-sm">
-                  <span class="badge proj-label">UI/UX Design</span>
-                  <span class="badge proj-label">Web App</span>
-                  <span class="badge proj-label">Artificial Intelligence</span>
-                </div> -->
                 <h3 class="card-title">Partiful Event Customization</h3>
                 <p class="card-text">
                   Creating immersive digital party invites
                 </p>
+                <div class="space-bottom-sm">
+                  <span class="badge proj-label">UI/UX</span>
+                  <span class="badge proj-label">Product Design</span>
+                  <span class="badge proj-label">Figma</span>
+                </div>
               </div>
             </a>
           </div>
@@ -147,15 +144,15 @@
                 />
               </div>
               <div class="card-body">
-                <!-- <div class="space-bottom-sm">
-                  <span class="badge proj-label">UI/UX Design</span>
-                  <span class="badge proj-label">Web App</span>
-                  <span class="badge proj-label">Artificial Intelligence</span>
-                </div> -->
                 <h3 class="card-title">Pastiche Responsive Redesign</h3>
                 <p class="card-text">
                   Revamping the UI of Providence's favorite bakery
                 </p>
+                <div class="space-bottom-sm">
+                  <span class="badge proj-label">HTML/CSS</span>
+                  <span class="badge proj-label">Figma</span>
+                  <span class="badge proj-label">Branding</span>
+                </div>
               </div>
             </a>
           </div>
@@ -169,11 +166,6 @@
                 />
               </div>
               <div class="card-body">
-                <!-- <div class="space-bottom-sm">
-                  <span class="badge proj-label">UI/UX Design</span>
-                  <span class="badge proj-label">Web App</span>
-                  <span class="badge proj-label">Artificial Intelligence</span>
-                </div> -->
                 <h3 class="card-title">
                   Cisco • Software Engineering Internship
                 </h3>
@@ -181,6 +173,13 @@
                   Developing an automation platform for the Security Business
                   Group
                 </p>
+                  <div class="space-bottom-sm">
+                  <span class="badge proj-label">Python/Flask</span>
+                  <span class="badge proj-label">Web App</span>
+                  <span class="badge proj-label">REST APIs</span>
+                  <span class="badge proj-label">UI/UX</span>
+                  <span class="badge proj-label">Back-end</span>
+                </div>
               </div>
             </a>
           </div>
@@ -189,9 +188,7 @@
       <footer class="py-5">
         <div class="row">
           <div class="col-sm-8 mx-auto">
-            <!-- Add mx-auto class to center the column -->
             <p class="text-center mb-1">
-              <!-- Add text-center class to center the text -->
               &copy; 2024 created with ❤️ by Alexis Fry
             </p>
           </div>

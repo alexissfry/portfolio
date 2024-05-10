@@ -16,138 +16,138 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <!-- import style sheet -->
     <link rel="stylesheet" href="../resources/styles/pastiche.css" />
+    <!-- import font awesome -->
+    <script
+      src="https://kit.fontawesome.com/82113c773a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
-        <a class="navbar-brand mb-0" id="nav-text" href="/"
-          >Alexis Fry</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#projects">Work</a> <!-- FIX -->
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="fun.html">Fun</a><!-- FIX -->
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light transparent-navbar px-5">
+      <a class="navbar-brand mb-0" id="nav-text" href="\">Alexis Fry</a>
+    </nav>
     <main>
       <div class="landing-container space">
-        <h1>Pastiche Fine Desserts</h1>
-        <h2>A responsive redesign for Federal Hill's beloved dessert shop</h2>
+        <div class="space-bottom">
+          <h1>Pastiche Fine Desserts</h1>
+          <h2>A responsive redesign for Federal Hill's beloved dessert shop</h2>
+        </div>
+        <div class="row d-flex align-content-center space-top body-text">
+          <div class="col-md-3">
+            <div class="text-mini">Role</div>
+            <p>Frontend Engineer, Product Designer</p>
+          </div>
+          <div class="col-md-3">
+            <div class="text-mini">Timeline</div>
+            <p>March 2024</p>
+          </div>
+          <div class="col-md-3">
+            <div class="text-mini">Skills</div>
+            <span class="badge proj-label">HTML/CSS</span>
+            <span class="badge proj-label">Product Design</span>
+            <span class="badge proj-label">Figma</span>
+          </div>
+        </div>
       </div>
       <div class="context-container">
         <img
           class="img-fluid"
-          src="../resources/images/pastiche/current-site.png"
+          src="../resources/images/pastiche/current-site.gif"
           alt="Pastiche's current site"
         />
         <p>
           Pastiche's current homepage, view the entire site
           <a href="https://pastichefinedesserts.com/" target="_blank">here</a>!
         </p>
-        <div class="row justify-content-start space">
-          <div class="col-lg-8 mx-auto">
-            <h1>Overview</h1>
-            <p class="proj-body">
-              Although Pastiche truly sells impeccable pastries, their website
-              is difficult to navigate and learn, has accessibility issues, is
-              not responsive, and fails to embody the coziness and European
-              essense of this Federal Hill staple.
-            </p>
-            <h2>Objective</h2>
-            <p class="proj-body">
-              The objective of this redesign is to make Pastiche's corner of the
-              internet embody the experience of walking into their shop—the
-              smell of butter and sugar wafting from freshly baked pastries and
-              the intricate painted murals of rolling green hills—to invite new
-              and loyal customers alike inside. Secondly, this redesign will focus on redesigning outdated components to ensure that this 40-year old bakery
-              is able stay relevant in our increasingly digital world.
-            </p>
-            <h2>Scope</h2>
-            <p class="proj-body">
-              This project exclusively focuses on redesigning the homepage of
-              Pastiche's website, which is why some clickable links are just
-              simulated.
-            </p>
+        <div class="row space-md">
+          <div class="col-lg-9 mx-auto">
+            <div class="row">
+              <div class="col-md-3 mr-3">
+                <h2 id="spec-bold">Problem</h2>
+              </div>
+              <div class="col body-text">
+                Although Pastiche Fine Desserts is a Federal Hill staple, their
+                website is
+                <strong
+                  >difficult to navigate and learn, has accessibility issues, is
+                  not responsive</strong
+                >, and fails to embody the coziness and European essence of this
+                beloved bakery.
+              </div>
+            </div>
+            <div class="row space-md">
+              <div class="col-md-3 mr-3">
+                <h2 id="spec-bold">Objective</h2>
+              </div>
+              <div class="col body-text">
+                How can Pastiche's
+                <strong
+                  >corner of the internet embody the experience of walking into
+                  the shop</strong
+                >
+                — the smell of butter and sugar wafting from freshly baked
+                pastries and the intricate painted murals of rolling green
+                hills—to invite customers inside? How can I ensure that this
+                40-year-old bakery is able to
+                <strong>stay relevant and discoverable</strong> in our
+                increasingly digital world?
+              </div>
+            </div>
+          </div>
+          <div id="center-img">
+            <img
+              class="img-fluid"
+              src="../resources/images/pastiche/inside.png"
+              alt="Pastiche's shop interior"
+            />
           </div>
         </div>
       </div>
       <div class="research-container">
         <div class="row justify-content-start space">
           <div class="col-lg-8 mx-auto">
-            <h1>Research: Identifying Problems</h1>
-            <h2>👩‍💻 Usability</h2>
-            <ul class="body-text">
-              <li>
-                The <strong>navbar text is difficult to read</strong> when
-                images with darker hues underlay it, creating a lack in contrast
-              </li>
-              <li>
-                The interface is <strong>not responsive</strong>, resulting in bizzare cropping of photos and
-                loss of information, specifically customer favorites
-              </li>
-              <li>
-                Important information, such as hours and ordering, is <strong>cluttered in the center</strong> of the
-                interface and such information lacks clear outlines or borders
-              </li>
-            </ul>
-            <h2>🧠 Learnability, Memorability, & Efficiency</h2>
-            <ul class="body-text">
-              <li>
-                There are <strong>unclear distinctions between descriptions</strong>, such as the "About"
-                and "The Shop" options in the navbar, that require relearning
-              </li>
-              <li>
-                The <strong>footer has missing content</strong>, such as the "A happy customer" column, that cause
-                confusion and distraction
-              </li>
-              <li>
-                The photo of the cappuccino and cakes in the customer favorites
-                carousel
-                <strong> do not clearly convey that they are buttons</strong>,
-                lacking notable metaphor or affordance, and only triggers a
-                cursor change and slight transparent image overlay causing misclicks
-              </li>
-            </ul>
-            <h2>🌎 Accessibility</h2>
-            <ul class="body-text">
-              <li>
-                There is a significant <strong>lack in contrast</strong> between
-                the light gray text and white background at the center of the
-                interface; this lack of contrast is also apparent with the
-                lighter blue text and blue background in the footer
-              </li>
-              <li>
-                The
-                <strong>text is small and difficult to read</strong> throughout
-                the interface with the exception of headers
-              </li>
-              <li>
-                Some images on the interface are
-                <strong>missing alternative text</strong>
-              </li>
-            </ul>
+            <h1>User Research</h1>
+            <p class="body-text">
+              Through user interviews, I discovered issues with navigating
+              Pastiche’s website that mainly fell in the realms of usability,
+              learnability/memorability, and accessibility.
+            </p>
+            <div class="row">
+              <div class="col-md-6 mt-3">
+                <h4>🧠 Interaction Confusion</h4>
+                <p class="body-text p-0">
+                  The footer has missing content, which not only makes the site
+                  look outdated but also causes confusion. Further, certain
+                  photos do not clearly convey that they are buttons, lacking
+                  notable metaphor or affordance.
+                </p>
+              </div>
+              <div class="col-md-6 mt-3">
+                <h4>🔲 Contrast Issues</h4>
+                <p class="body-text p-0">
+                  The navbar text is difficult to read when images with darker
+                  hues underlay it. The light gray text against the white
+                  background is not readable; the same lack of contrast applies
+                  to the footer.
+                </p>
+              </div>
+              <span class="w-100"></span>
+              <div class="col-md-6 mt-3">
+                <h4>💻 Not Responsive</h4>
+                <p class="body-text p-0">
+                  The interface is not responsive, resulting in bizarre cropping
+                  of photos and loss of information.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="design-container">
         <div class="row justify-content-start space">
           <div class="col-lg-8 mx-auto">
-            <h1>Design Process</h1>
-            <h2>Early Stage Sketches</h2>
+            <h1>Process</h1>
+            <h2>Ideation & Sketching</h2>
             <div class="context-container">
               <img
                 class="img-fluid space-bottom"
@@ -156,29 +156,33 @@
                 alt="Early stage sketches"
               />
             </div>
-            <p class="proj-body">
-              The starting, 9-box sketch was an opportunity to put
-              pen to paper on any interface designs that came to mind for Pastiche!
-              After reflecting on my initial, rough ideas, I gravitated towards
-              a very minimalistic landing page that embodied the European-style
-              of Pastiche and invited users to enter the website like you would the bakery itself.
+            <p class="body-text">
+              The 9-box speed sketch was an opportunity to put pen to paper on
+              any interface designs that came to mind for Pastiche. I ended up
+              gravitating towards a very minimalistic landing page that embodied
+              the European-style of Pastiche and invited users to enter the
+              website like you would the bakery itself.
             </p>
-            <p class="proj-body space-bottom">
-              With the final sketch, I decided to start by presenting
-              photos of not just the desserts Pastiche sells but the store
-              itself and its history. Then, I focused on making sure
-              there were clear divisions between information. Sketching out the full interface gave me a thorough mental model of what I wanted to
-              accomplish in the low-fidelity wireframes.
+            <p class="body-text space-bottom">
+              With the final sketch, I decided to start by presenting not just
+              their pastries but the store itself and its history. Then, I
+              focused on making sure there were clear divisions between
+              information. Sketching out the full interface gave me a thorough
+              mental model of what I wanted to accomplish with the low-fidelity
+              wireframes.
             </p>
             <h2 class="space-bottom">Low-fidelity Wireframes</h2>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOBuGlUChkkncrXH3cUnPie%2FPastiche-Low-fidelity-Wireframes%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DcvXyADCMRF5P99iF-1" allowfullscreen></iframe>
-            <p class="proj-body space-bottom">
-              The low-fidelity wireframes were
-              essential in the process of refining the design to make sure I was
-              addressing user pain points identified during research and
-              planning out responsiveness across desktop and mobile interfaces.
-              Then, I was able to move onto making all of my ideas come to life
-              in the high-fidelity wireframes, accompanied by the style guide.
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="800"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOBuGlUChkkncrXH3cUnPie%2FPastiche-Low-fidelity-Wireframes%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DcvXyADCMRF5P99iF-1"
+              allowfullscreen
+            ></iframe>
+            <p class="body-text space-bottom">
+              These wireframes were essential in the process of refining the
+              design to make sure I was addressing user pain points and planning
+              out responsiveness from desktop to mobile interfaces.
             </p>
             <h2>Style Guide</h2>
             <div class="image-container">
@@ -189,44 +193,116 @@
                 alt="Pastiche's style guide"
               />
             </div>
-            <h2 class="space-bottom">High-fidelity Prototypes</h2>
-            <iframe
+            <h2 class="space-bottom">High-fidelity Prototype</h2>
+            <div class="row">
+              <div class="col-md-5">
+                <h4 id="hifi-elem">High contrast text</h4>
+              </div>
+              <div class="col-md-7">
+                <p class="proj-body p-0">
+                  The interface uses high contrast colors, cream white and navy,
+                  for font and background. This change applies to the navbar
+                  dropdown, each section, and the footer.
+                </p>
+              </div>
+            </div>
+            <img
+              class="img-fluid space-bottom-lg"
+              src="../resources/images/pastiche/contrast.gif"
+              alt="High-fidelity mockup showing contrast"
+            />
+            <div class="row">
+              <div class="col-md-8">
+                <h4 id="hifi-elem">Using icons for memorability</h4>
+                <p class="proj-body space-top space-bottom-lg">
+                  To declutter the landing page, I opted for a minimized navbar
+                  that could be maximized through clicking a hamburger icon.
+                  Further, the clickability through “Favorites” are denoted by
+                  arrow icons. Using icons allows the interface to efficiently
+                  convey functionality to the user through metaphorical
+                  affordance.
+                </p>
+                <h4 id="hifi-elem">Ensuring responsiveness</h4>
+                <p class="proj-body space-top">
+                  During development, I focused on ensuring that each component
+                  is responsive to the smallest mobile device to the largest
+                  desktop. This technical functionality has important
+                  implications for accessibility and, ultimately, Pastiche’s
+                  brand credibility.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <img
+                  class="img-fluid"
+                  src="../resources/images/pastiche/icons.gif"
+                  alt="High-fidelity mockup showing icon functionality"
+                />
+              </div>
+            </div>
+
+            <!-- <iframe
               style="border: 1px solid rgba(0, 0, 0, 0.1)"
               width="800"
               height="450"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FXwFah2j22h9DgcmHZp2BeI%2FPastiche%3Ftype%3Ddesign%26node-id%3D21%253A3%26mode%3Ddesign%26t%3DJX7Lz3PtStEMRc5Z-1"
               allowfullscreen
             ></iframe>
-            <p class="proj-body">
+            <p class="body-text">
               The high-fidelity prototypes fully implement the general layout of
-              the low-fidelity wireframes, all the components and attributes in the style
-              guide, and aims to embody the spirit of Pastiche, Providence's
-              historic, European-style bakery shop. Certain components of the
-              interface were designed intentionally to accomplish my objective:
-              <ul class="body-text">
-                <li><strong>Title fonts:</strong> Sticking with the original "Pastiche" logo font allows consistentcy throughout the interface and gives a established feel </li>
-                <li><strong>Font color and size:</strong> The deep navy blue and cream create strong contrast for readibility and font size is scaled dynamically depending on the interface dimensions </li>
-                <li><strong>About section image carousel and description: </strong> The description alongside images of Pastiche's storefront, bakers, and interior immediately give the users an understanding of the bakery and what it has to offer</li>
-                <li><strong>Favorites section and order button: The floating nature of the cakes allow users to easily view customer favorites and the constrasting, centered order button gives an easy solution for users to satisfy their sweet tooth</strong></li>
-                <li><strong>Complete, scaled footer:</strong> The completeness and organization of the footer decreases user confusion and presents information that is easy to understand and interact with </li>
-              </ul>
+              the low-fidelity wireframes, all the components and attributes in
+              the style guide, and aims to embody the spirit of Pastiche,
+              Providence's historic, European-style bakery shop. Certain
+              components of the interface were designed intentionally to
+              accomplish my objective:
             </p>
+            <ul class="body-text">
+              <li>
+                <strong>Title fonts:</strong> Sticking with the original
+                "Pastiche" logo font allows consistency throughout the interface
+                and gives an established feel.
+              </li>
+              <li>
+                <strong>Font color and size:</strong> The deep navy blue and
+                cream create strong contrast for readability, and font size is
+                scaled dynamically depending on the interface dimensions.
+              </li>
+              <li>
+                <strong>About section image carousel and description:</strong>
+                The description alongside images of Pastiche's storefront,
+                bakers, and interior immediately give users an understanding of
+                the bakery and what it has to offer.
+              </li>
+              <li>
+                <strong>Favorites section and order button:</strong> The
+                floating nature of the cakes allows users to easily view
+                customer favorites, and the contrasting, centered order button
+                gives an easy solution for users to satisfy their sweet tooth.
+              </li>
+              <li>
+                <strong>Complete, scaled footer:</strong> The completeness and
+                organization of the footer decreases user confusion and presents
+                information that is easy to understand and interact with.
+              </li>
+            </ul> -->
           </div>
         </div>
       </div>
       <div class="final-container">
         <div class="row justify-content-start space">
           <div class="col-lg-8 mx-auto">
-            <h1>Final Redesign</h1>
-            <div class="desktop-image-container">
+            <h1 class="space-bottom">Final Product</h1>
+            <div>
               <a
                 href="https://alexissfry.github.io/CSCI1300-Responsive-Redesign/"
                 target="_blank"
               >
-                <img
-                  src="../resources/images/pastiche/desktop-mockup.png"
-                  alt="Laptop mockup"
-                />
+                <div id="center-img">
+                  <img
+                    class="img-fluid desktop-image-container"
+                    src="../resources/images/pastiche/desktop.png"
+                    alt="Laptop mockup"
+                  />
+                </div>
               </a>
             </div>
             <div class="context-container space-bottom">
@@ -237,25 +313,47 @@
                   target="_blank"
                   >here</a
                 >
-                to access the fully interactive site!
+                to access the fully redesigned site!
               </p>
             </div>
-            <h1>Conclusion</h1>
-            <p class="proj-body">
-              I found this project to be quite challenging
-              given that it was my first time using Bootstrap and media queries!
-              At the same time, the process of redesigning an interface was
-              really rewarding. More specifically, I really enjoyed the process
-              of researching and designing a digital interface from scratch and developing it into
-              a relatively functional and responsive final website. I found
-              it especially satisfying because I am often annoyed how I
-              can never provide direct feedback when interfaces frustrate me. I
-              loved how I could take it into my own hands with this project, and
-              I also learned really useful UX principles from sketching to coding the final product.
+            <h1 class="space-bottom">Takeaways</h1>
+            <h4>➡️ The importance responsiveness</h4>
+            <p class="body-text">
+              Through learning by doing, I saw the simultaneous challenge and
+              importance of interface responsiveness. Responsiveness demands
+              creative thinking that balances conveying a component in the same
+              way but with less space, which increases design and development
+              time. In the specific use case of Pastiche, the ability to view
+              the website on mobile devices is incredibly important for
+              discoverability, since the chance that users are on their phones
+              searching for pastry places is high. The lack of responsiveness of
+              Pastiche’s website limits access to information for a subset of
+              users and potentially could turn potential customers away,
+              impacting Pastiche’s bottom line.
+            </p>
+            <h4>➡️ Getting feedback early</h4>
+            <p class="body-text">
+              Since I was working on this project solo, I felt that deciding
+              between ideas became difficult without input from another.
+              Therefore, I took the initiative to finish my research and
+              low-fidelity wireframes early and go to office hours. Through
+              managing the timeline of my redesign well, I was able to get
+              pivotal advice that helped improve the end product. I saw
+              first-hand how getting feedback early on in the product
+              development cycle and making changes then saves resources overall.
             </p>
           </div>
         </div>
       </div>
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-sm-8 mx-auto">
+            <p class="text-center mb-1">
+              &copy; 2024 created with ❤️ by Alexis Fry
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -9,6 +9,13 @@
 }
 
 /* General Component Styling */
+html {
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Inter", sans-serif;
   color: var(--text-dark);
@@ -27,16 +34,23 @@ h3 {
   font-weight: var(--font-medium);
 }
 
-p, .body-text {
+h4 {
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+}
+
+p,
+.body-text {
   font-family: "Inter", sans-serif;
   color: var(--text-dark);
   font-weight: var(--font-regular);
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2em;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: var(--accent);
 }
 
@@ -44,31 +58,74 @@ a, a:hover {
 .space-bottom {
   margin-bottom: 2rem;
 }
-
 .space {
   padding: 3rem 0;
 }
-
+.space-bottom-sm {
+  margin-bottom: 1rem;
+}
+.space-bottom-lg {
+  margin-bottom: 3rem;
+}
+.space-md {
+  padding: 4rem 0;
+}
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
 }
+.text-mini {
+  font-size: 15px;
+  color: var(--text-grey);
+  font-weight: var(--font-bold);
+}
 
-/* Specific Styling */
+/* Navbar */
 #nav-text {
   font-family: "Inter", sans-serif;
   color: var(--text-dark);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-bold);
+  font-size: 24px;
 }
 
+.transparent-navbar {
+  padding: 2rem 5vw;
+  background-color: transparent !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: var(--text-dark);
+  font-weight: var(--font-medium);
+  margin-left: 0.5em;
+}
+
+/* Skill Labels */
+.proj-label {
+  background-color: rgba(244, 86, 69, 0.051) !important;
+  color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+  padding: 0.5em 0.8em;
+  font-weight: var(--font-medium) !important;
+  margin-bottom: 0.5em;
+}
+
+/* Specific Styling */
 .landing-container {
   position: relative;
-  padding-top: 20vh;
+  padding-top: 10vh;
   min-height: 45vh;
   width: 100%;
-  padding-left: 6rem;
+  padding-left: 10em;
+}
+
+#center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .context-container img {
@@ -76,6 +133,10 @@ a, a:hover {
   height: 100%;
   object-fit: contain;
   border-radius: 5px;
+}
+
+#spec-bold {
+  font-weight: var(--font-bold);
 }
 
 .context-container {
@@ -91,21 +152,14 @@ a, a:hover {
   height: auto;
 }
 
-.desktop-image-container {
-  height: 550px;
-  overflow: auto;
-  display: flex;
-  align-items: flex-start;
-  border: solid 20px #212529;
-  border-radius: 7px;
-  margin: 0;
-  padding: 0;
+#hifi-elem {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 
-.desktop-image-container img {
-  width: 100%;
+.desktop-image-container {
+  width: 80%;
   height: auto;
-  display: block;
 }
 
 #sketches {
@@ -118,6 +172,9 @@ a, a:hover {
 }
 
 @media (max-width: 992px) {
+  .transparent-navbar {
+    padding: 2rem !important;
+  }
   main {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -142,7 +199,7 @@ a, a:hover {
   }
 
   .landing-container {
-    padding-top: 10vh;
+    padding-top: 4vh;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -157,25 +214,24 @@ a, a:hover {
 }
 
 @media (max-width: 576px) {
-  .proj-body, .body-text {
+  .proj-body,
+  .body-text {
     font-size: 16px;
     line-height: 1.5em;
   }
 
   .landing-container {
-    padding-top: 5vh;
+    padding-top: 3vh;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 1.5rem;
   }
 
   .space {
     padding: 1rem 0;
-  }
-
-  .desktop-image-container {
-    border: solid 10px #212529;
   }
 
   iframe {
