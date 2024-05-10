@@ -24,7 +24,9 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light transparent-navbar px-5">
-      <a class="navbar-brand mb-0" id="nav-text" href="../index.html">Alexis Fry</a>
+      <a class="navbar-brand mb-0" id="nav-text" href="../index.html"
+        >Alexis Fry</a
+      >
     </nav>
     <main>
       <div class="landing-container space">
@@ -59,7 +61,7 @@
       <div class="context-container">
         <img
           class="img-fluid space-bottom-lg"
-          src="../resources/images/pastiche/current-site.gif"
+          src="../resources/images/cisco/cisco-landing.png"
           alt="Pastiche's current site"
         />
         <div class="row">
@@ -85,8 +87,7 @@
                 an end-to-end automation platform that would allow internal
                 engineers to post a ticket on our kanban board and automatically
                 get added to the SBG GitHub organization, replacing an otherwise
-                manual process that especially became time consuming during
-                times of company acquisitions.
+                manual process.
               </div>
             </div>
             <div class="row space-sm">
@@ -120,6 +121,13 @@
                       decreased time to onboard onto GitHub
                     </p>
                   </div>
+                  <div class="col-md-4">
+                    <h2>
+                      <i class="fas fa-clock icon-sm"></i
+                      ><strong> 70-350 </strong>
+                    </h2>
+                    <p class="text-mini">minutes saved for my time per week</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -139,21 +147,21 @@
             </p>
             <div class="row">
               <div class="col-md-6 mt-3">
-                <h4>⏰ Time sink of repetitive, manual tasks</h4>
+                <h4>⏰ Time sink of automatable tasks</h4>
                 <p class="body-text p-0">
-                  The footer has missing content, which not only makes the site
-                  look outdated but also causes confusion. Further, certain
-                  photos do not clearly convey that they are buttons, lacking
-                  notable metaphor or affordance.
+                  Engineers on my team were spending time manually adding users
+                  to SBG's GitHub organization, which would interrupt other,
+                  more important work and especially become time consuming
+                  during external company acquisitions.
                 </p>
               </div>
               <div class="col-md-6 mt-3">
                 <h4>🛑 Workflow blockage</h4>
                 <p class="body-text p-0">
-                  The navbar text is difficult to read when images with darker
-                  hues underlay it. The light gray text against the white
-                  background is not readable; the same lack of contrast applies
-                  to the footer.
+                  Engineers that needed to be onboarded would have to message
+                  our team on Webex, wait for one of us to add them, and then
+                  have access needed for any work. The need for multiple actions
+                  internally and externally could be simplified with automation.
                 </p>
               </div>
             </div>
@@ -171,13 +179,18 @@
               if the automation was going to be built with an API gateway or a
               Flask web app, so we weighed the most relevant pros and cons.
             </p>
+            <div class="context-container">
+              <img
+                class="img-fluid"
+                src="../resources/images/cisco/matrix.png"
+                alt="Flask logo"
+              />
+            </div>
             <p class="body-text space-bottom">
-              With the final sketch, I decided to start by presenting not just
-              their pastries but the store itself and its history. Then, I
-              focused on making sure there were clear divisions between
-              information. Sketching out the full interface gave me a thorough
-              mental model of what I wanted to accomplish with the low-fidelity
-              wireframes.
+              Ultimately, we decided for the foundation of the automation
+              platform to be a Flask web app due to its accessible, extensible
+              nature as it will change to automate more tasks, my prior
+              experience using this framework, and ability to scale.
             </p>
             <h2 class="space-bottom">Technical Architecture</h2>
             <img
@@ -198,9 +211,43 @@
               Jira ticket, stating whether they were successfully onboarded onto
               GitHub or not.
             </p>
-            <h2>Implementation</h2>
-            <p class="body-text">WRITE</p>
-            <h2 class="space-bottom">Testing</h2>
+            <h2>Implementation: Balancing UX & Dev Time</h2>
+            <p class="body-text">
+              One technical takeaway from this project was a design decision I
+              needed to make when figuring out how to parse data. During
+              testing, I noticed that if a user applied any styling, such as a
+              hyperlink or italics, to within the body of the ticket request,
+              the JSON shape would change and my code would be unable to find
+              the user ID in the expected layer of the description. I had two
+              options: to tell the user not to apply styling or links to their
+              ticket text or to rebuild and test a new parsing class. I realized
+              that adding this specification to the automation platform’s user
+              docs could be easily missed and cause lots of frustration if a
+              user’s request fails. Thus, I opted to put the user first and
+              redevelop the parsing component of the application.
+            </p>
+            <h2>Testing</h2>
+            <p class="body-text space-bottom">
+              One technical takeaway from this project was a design decision I
+              needed to make when figuring out how to parse data. During
+              testing, I noticed that if a user applied any styling, such as a
+              hyperlink or italics, to within the body of the ticket request,
+              the JSON shape would change and my code would be unable to find
+              the user ID in the expected layer of the description. I had two
+              options: to tell the user not to apply styling or links to their
+              ticket text or to rebuild and test a new parsing class. I realized
+              that adding this specification to the automation platform’s user
+              docs could be easily missed and cause lots of frustration if a
+              user’s request fails. Thus, I opted to put the user first and
+              redevelop the parsing component of the application.
+            </p>
+            <div class="context-container">
+              <img
+                class="img-fluid space-bottom"
+                src="../resources/images/cisco/versus.png"
+                alt="Testing Postman vs Pytest"
+              />
+            </div>
             <p class="body-text">
               Throughout the development process, I wrote units in pytest to
               ensure that the endpoints of each function were working as
@@ -220,7 +267,7 @@
               ensure that the platform was sending the proper requests to such
               interfaces.
             </p>
-            <h2 class="space-bottom">Documentation & Presentation</h2>
+            <h2>Documentation & Presentation</h2>
             <p class="body-text">
               Externally for users of the automation platform, I created
               documentation that specifies how to format and submit a ticket to
@@ -248,9 +295,22 @@
               that is used by millions across the world.
             </p>
             <h4>➡️ Take initiative to communicate</h4>
-            <p class="body-text">WRITE</p>
+            <p class="body-text">
+              Since I was working on a distributed, mostly remote team,
+              communication was key to keeping my mentor and manager updated on
+              my progress. Further, making sure to reach out to point people
+              when I could not unblock myself was essential to staying on
+              timeline and being able to get to the deployment stage.
+            </p>
             <h4>➡️ Always stay close to the user as an engineer</h4>
-            <p class="body-text">WRITE</p>
+            <p class="body-text">
+              If people don’t use your product, it will not survive. It is easy
+              as an engineer to feel very isolated from the user when getting in
+              the weeds of technical implementation. However, especially as a
+              full-stack engineer, the user’s experience should always be
+              prioritized. I believe this is one essential step to build
+              products people love.
+            </p>
             <div class="context-container">
               <img
                 class="img-fluid"
