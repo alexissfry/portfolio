@@ -69,6 +69,9 @@ a:hover {
 .space-md {
   padding: 4rem 0;
 }
+.space-top {
+  padding-top: 10rem;
+}
 .image-container {
   display: flex;
   justify-content: center;
